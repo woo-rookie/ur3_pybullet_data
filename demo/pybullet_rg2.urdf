@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="pybullet_rg2">
+  <link
+    name="gripper_base_link">
+    <inertial>
+      <origin
+        xyz="-0.00011883563345329 4.70054905881845E-06 0.0572680906518555"
+        rpy="0 0 0" />
+      <mass
+        value="0.199035856566616" />
+      <inertia
+        ixx="0.000170600248417701"
+        ixy="3.75673847467217E-08"
+        ixz="4.71579777629805E-08"
+        iyy="0.000213152093040191"
+        iyz="-1.76513863533633E-07"
+        izz="5.59878626374685E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="gripper_finger1_finger_link">
+    <inertial>
+      <origin
+        xyz="0.00107180889966708 0.0103000002725817 0.00719447424225193"
+        rpy="0 0 0" />
+      <mass
+        value="0.0157597232324457" />
+      <inertia
+        ixx="4.77930907548385E-06"
+        ixy="-3.3818980295273E-15"
+        ixz="-1.64279014982784E-07"
+        iyy="4.865441590744E-06"
+        iyz="-1.33929902010908E-14"
+        izz="1.31307089078094E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger1_finger_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger1_finger_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0169 -0.0103 0.105"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_base_link" />
+    <child
+      link="gripper_finger1_finger_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0.8"
+      effort="1000"
+      velocity="2" />
+  </joint>
+  <link
+    name="gripper_finger1_finger_tip2_link">
+    <inertial>
+      <origin
+        xyz="-0.0106594416667818 0.0100000007251858 0.0272764194581964"
+        rpy="0 0 0" />
+      <mass
+        value="0.00872849065417813" />
+      <inertia
+        ixx="1.50886455139492E-06"
+        ixy="-1.78552626600771E-14"
+        ixz="2.60234059895028E-07"
+        iyy="1.45214737233688E-06"
+        iyz="9.35094538066434E-14"
+        izz="3.57695503495603E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger1_finger_tip2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger1_finger_tip2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger1_finger_tip2_joint"
+    type="continuous">
+    <origin
+      xyz="0.002 0.0003 0.054964"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_finger1_finger_link" />
+    <child
+      link="gripper_finger1_finger_tip2_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.1"
+      velocity="100" />
+  </joint>
+  <link
+    name="gripper_finger1_inner_knuckle_link">
+    <inertial>
+      <origin
+        xyz="0.00075272554191172 0.00999999924320924 0.0203934641019565"
+        rpy="0 0 0" />
+      <mass
+        value="0.00491742236496327" />
+      <inertia
+        ixx="1.98120134788244E-06"
+        ixy="-6.43574760725799E-14"
+        ixz="-6.20941625040096E-08"
+        iyy="1.77599017859716E-06"
+        iyz="-1.09055934773093E-14"
+        izz="2.48948112270257E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger1_inner_knuckle_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger1_inner_knuckle_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger1_inner_knuckle_joint"
+    type="continuous">
+    <origin
+      xyz="0.0074 -0.01 0.1215"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_base_link" />
+    <child
+      link="gripper_finger1_inner_knuckle_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.1"
+      velocity="100" />
+  </joint>
+  <link
+    name="gripper_finger1_finger_tip_link">
+    <inertial>
+      <origin
+        xyz="-0.00115944166678258 0.00580000072518584 0.0107764194581964"
+        rpy="0 0 0" />
+      <mass
+        value="0.00872849065417813" />
+      <inertia
+        ixx="1.50886455139492E-06"
+        ixy="-1.78552626607299E-14"
+        ixz="2.60234059895028E-07"
+        iyy="1.45214737233688E-06"
+        iyz="9.350945380592E-14"
+        izz="3.57695503495603E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger1_finger_tip_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger1_finger_tip_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger1_finger_tip_joint"
+    type="continuous">
+    <origin
+      xyz="0.002 0.0042 0.054964"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_finger1_inner_knuckle_link" />
+    <child
+      link="gripper_finger1_finger_tip_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.1"
+      velocity="100" />
+  </joint>
+  <link
+    name="gripper_finger2_finger_link">
+    <inertial>
+      <origin
+        xyz="-0.00107180889966696 0.0102999997274183 0.00719447424225193"
+        rpy="0 0 0" />
+      <mass
+        value="0.0157597232324457" />
+      <inertia
+        ixx="4.7793090754839E-06"
+        ixy="-3.3818980684152E-15"
+        ixz="1.64279014982267E-07"
+        iyy="4.865441590744E-06"
+        iyz="1.33929901030898E-14"
+        izz="1.31307089078089E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger2_finger_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger2_finger_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0171 -0.0103 0.105"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_base_link" />
+    <child
+      link="gripper_finger2_finger_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1000"
+      velocity="100" />
+  </joint>
+  <link
+    name="gripper_finger2_finger_tip_link">
+    <inertial>
+      <origin
+        xyz="0.0106594416667834 0.00999999927481414 0.0272764194581964"
+        rpy="0 0 0" />
+      <mass
+        value="0.00872849065417814" />
+      <inertia
+        ixx="1.50886455139492E-06"
+        ixy="-1.7855262227996E-14"
+        ixz="-2.60234059895028E-07"
+        iyy="1.45214737233688E-06"
+        iyz="-9.35094539468817E-14"
+        izz="3.57695503495603E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger2_finger_tip_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger2_finger_tip_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger2_finger_tip2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.002 0.0003 0.054964"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_finger2_finger_link" />
+    <child
+      link="gripper_finger2_finger_tip_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.1"
+      velocity="100" />
+  </joint>
+  <link
+    name="gripper_finger2_inner_knuckle_link">
+    <inertial>
+      <origin
+        xyz="-0.000752725541908488 0.0100000007567908 0.0203934641019566"
+        rpy="0 0 0" />
+      <mass
+        value="0.00491742236496327" />
+      <inertia
+        ixx="1.98120134788246E-06"
+        ixy="-6.43574760364913E-14"
+        ixz="6.20941625037353E-08"
+        iyy="1.77599017859716E-06"
+        iyz="1.090559338183E-14"
+        izz="2.48948112270238E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger2_inner_knuckle_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger2_inner_knuckle_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger2_inner_knuckle_joint"
+    type="continuous">
+    <origin
+      xyz="-0.00760000000000004 -0.0100000000000001 0.1215"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_base_link" />
+    <child
+      link="gripper_finger2_inner_knuckle_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.1"
+      velocity="100" />
+  </joint>
+  <link
+    name="gripper_finger2_finger_tip2_link">
+    <inertial>
+      <origin
+        xyz="0.00115944166678268 0.00579999927481416 0.0107764194581965"
+        rpy="0 0 0" />
+      <mass
+        value="0.00872849065417814" />
+      <inertia
+        ixx="1.50886455139492E-06"
+        ixy="-1.7855262228933E-14"
+        ixz="-2.60234059895028E-07"
+        iyy="1.45214737233688E-06"
+        iyz="-9.3509453948236E-14"
+        izz="3.57695503495603E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger2_finger_tip2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pybullet_rg2/meshes/gripper_finger2_finger_tip2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger2_finger_tip_joint"
+    type="continuous">
+    <origin
+      xyz="-0.002 0.0042 0.054964"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_finger2_inner_knuckle_link" />
+    <child
+      link="gripper_finger2_finger_tip2_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.1"
+      velocity="100" />
+  </joint>
+</robot>
