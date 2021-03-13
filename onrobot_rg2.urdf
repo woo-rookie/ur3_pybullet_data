@@ -29,7 +29,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_base_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_base_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -38,7 +38,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_base_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_base_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -56,7 +56,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger1_finger_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger1_finger_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -65,7 +65,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger1_finger_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger1_finger_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -90,7 +90,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger1_inner_knuckle_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger1_inner_knuckle_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -99,7 +99,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger1_inner_knuckle_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger1_inner_knuckle_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -125,7 +125,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger1_finger_tip_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger1_finger_tip_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -134,7 +134,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger1_finger_tip_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger1_finger_tip_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -160,7 +160,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger2_finger_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger2_finger_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -169,7 +169,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger2_finger_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger2_finger_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -194,7 +194,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger2_inner_knuckle_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger2_inner_knuckle_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -203,7 +203,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger2_inner_knuckle_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger2_inner_knuckle_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -228,7 +228,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger2_finger_tip_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger2_finger_tip_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -237,7 +237,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger2_finger_tip_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger2_finger_tip_link.STL"/>
       </geometry>
     </collision>
   </link>

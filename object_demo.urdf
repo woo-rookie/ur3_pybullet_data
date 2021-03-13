@@ -5,7 +5,7 @@
   <link name="base">
       <collision>
           <geometry>
-              <mesh filename="package://ur3/meshes/objects/828d1b43814fc98c93b89bfd41acaad0.obj"/>
+              <mesh filename="package://ur3_pybullet_data/meshes/objects/828d1b43814fc98c93b89bfd41acaad0.obj"/>
           </geometry>
       </collision>
       <inertial>

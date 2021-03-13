@@ -5,7 +5,7 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/visual/base.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/visual/base.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -13,7 +13,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/collision/base.stl"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/collision/base.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -32,7 +32,7 @@
   <link name="shoulder_link">
     <visual>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/visual/shoulder.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/visual/shoulder.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -40,7 +40,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/collision/shoulder.stl"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/collision/shoulder.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -59,7 +59,7 @@
   <link name="upper_arm_link">
     <visual>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/visual/upperarm.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/visual/upperarm.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -67,7 +67,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/collision/upperarm.stl"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/collision/upperarm.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -87,7 +87,7 @@
   <link name="forearm_link">
     <visual>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/visual/forearm.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/visual/forearm.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -95,7 +95,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/collision/forearm.stl"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/collision/forearm.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -114,7 +114,7 @@
   <link name="wrist_1_link">
     <visual>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/visual/wrist1.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/visual/wrist1.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -122,7 +122,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/collision/wrist1.stl"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/collision/wrist1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -141,7 +141,7 @@
   <link name="wrist_2_link">
     <visual>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/visual/wrist2.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/visual/wrist2.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -149,7 +149,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/collision/wrist2.stl"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/collision/wrist2.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -168,7 +168,7 @@
   <link name="wrist_3_link">
     <visual>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/visual/wrist3.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/visual/wrist3.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -176,7 +176,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ur3/meshes/ur3/collision/wrist3.stl"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/ur3/collision/wrist3.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -224,7 +224,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/robotiq_ft_sensor/visual/robotiq_ft300.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/robotiq_ft_sensor/visual/robotiq_ft300.STL"/>
       </geometry>
       <material name="Robotiq-Black">
         <color rgba="0.2 0.2 0.2 1.0"/>
@@ -233,7 +233,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/robotiq_ft_sensor/collision/robotiq_ft300.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/robotiq_ft_sensor/collision/robotiq_ft300.STL"/>
       </geometry>
     </collision>
   </link>
@@ -242,7 +242,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/robotiq_ft_sensor/visual/mountings/robotiq_ft300-G-062-COUPLING_G-50-4M6-1D6_20181119.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/robotiq_ft_sensor/visual/mountings/robotiq_ft300-G-062-COUPLING_G-50-4M6-1D6_20181119.STL"/>
       </geometry>
       <material name="Robotiq-Grey">
         <color rgba="0.4 0.4 0.4 1.0"/>
@@ -251,7 +251,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/robotiq_ft_sensor/collision/mountings/robotiq_ft300-G-062-COUPLING_G-50-4M6-1D6_20181119.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/robotiq_ft_sensor/collision/mountings/robotiq_ft300-G-062-COUPLING_G-50-4M6-1D6_20181119.STL"/>
       </geometry>
     </collision>
   </link>
@@ -287,7 +287,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_base_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_base_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -296,7 +296,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_base_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_base_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -309,7 +309,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger1_finger_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger1_finger_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -318,7 +318,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger1_finger_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger1_finger_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -338,7 +338,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger1_inner_knuckle_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger1_inner_knuckle_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -347,7 +347,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger1_inner_knuckle_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger1_inner_knuckle_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -375,7 +375,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger1_finger_tip_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger1_finger_tip_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -384,7 +384,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger1_finger_tip_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger1_finger_tip_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -405,7 +405,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger2_finger_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger2_finger_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -414,7 +414,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger2_finger_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger2_finger_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -435,7 +435,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger2_inner_knuckle_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger2_inner_knuckle_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -444,7 +444,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger2_inner_knuckle_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger2_inner_knuckle_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -472,7 +472,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/visual/gripper_finger2_finger_tip_link.dae"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/visual/gripper_finger2_finger_tip_link.dae"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -481,7 +481,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/onrobot_rg2/collision/gripper_finger2_finger_tip_link.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/onrobot_rg2/collision/gripper_finger2_finger_tip_link.STL"/>
       </geometry>
     </collision>
   </link>

@@ -16,7 +16,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/kinect_v2/kinect2.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/kinect_v2/kinect2.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -25,7 +25,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur3/meshes/kinect_v2/kinect2.STL"/>
+        <mesh filename="package://ur3_pybullet_data/meshes/kinect_v2/kinect2.STL"/>
       </geometry>
     </collision>
   </link>
